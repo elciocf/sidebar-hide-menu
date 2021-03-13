@@ -1,0 +1,40 @@
+Typescript: usado para tipar o javascript e facilitar o trabalho em equipe
+
+/* no exemplo abaixo não */
+
+function showWelcome(user){
+    return `Welcome ${user.name}, your email is ${user.email}`;
+}
+
+/*Supondo que seja necessário adicionar a informação de cidade e UF na msg e você não
+saiba quais os atributos do objeto user recebido pela função. Fica bem complicado!!!!!
+
+Com typescript é possível resolver esse tipo de situação evitando erros*/
+
+function showWelcome(user){
+    return `Welcome ${user.name}, your email is ${user.email}. Your city is ${user.city} and  you state is ${user.state}`;
+}
+
+
+Para isso criamos um type e nele definimos os formato do objeto user
+
+type User = {  //Primeira letra do type sempre em maiuscula
+   name: string
+   email: string
+   address: {
+       city: string
+       state?: string // o ? indica que o atibuto é opicional
+   }
+}
+
+//informamos o Type para o argumento da function
+function showWelcome(user: User){ 
+    return `Welcome ${user.name}, your email is ${user.email}. Your city is ${user.city} and  you state is ${user.state}`;
+}
+
+
+INSTALAÇÃO DO TYPESCRIPT
+
+yarn add typescript -D
+yarn tsc --init
+

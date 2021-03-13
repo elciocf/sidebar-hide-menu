@@ -1,0 +1,30 @@
+git init ------ estando na pasta para inicializar
+
+.gitignore ----- arquivo com nome de arquivos e pastas a serem ignorados
+
+exemplo de gitignore:
+
+node_modules
+dist
+
+-------------------------
+
+git add nome_do_arquivo
+git add .  ----- para add todos os arquivos novos ou modificados
+git status ----- para ver arquivos no stage
+git rm --cached nome_arquivo  para remover do stagged
+git rm --cached pasta -r  para remover do stagged
+
+git commit -m "mensagem de commit"
+
+------------------------
+Para enviar para web
+
+git branch -M main
+git remote add origin https://github.com/elciocf/reactjs-base.git
+git push -u origin main
+
+
+
+
+

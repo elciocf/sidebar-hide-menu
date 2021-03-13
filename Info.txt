@@ -1,0 +1,13 @@
+PARA RODAR: yarn dev  e abrir localhost:8080 no browser
+
+const path = require('path')
+Utilizado para tratar as diferenças entre o separador de diretórios no windows e linux
+
+Exemplo de uso:
+  path.resolve(__dirname, 'src', 'index.jsx') == pastadoprojeto/src/index.jsx
+
+
+
+
+
+

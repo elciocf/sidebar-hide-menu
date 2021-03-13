@@ -1,0 +1,42 @@
+section.repository-list {
+    margin: 40px;
+
+    h1 {
+        margin-bottom: 16px;
+    }
+
+    ul {
+        list-style: none;
+
+        li {            
+            /*
+             O codigo abaixo aplica uma margin-top e toda li q tem uma li antes dela  
+            */
+            & + li {
+                margin-top: 20px;
+            }
+            /*
+            no sass o & referencia o proprio elemento
+            o comando abaixo tira a margin do ultimo <li>
+            &:last-child{
+                margin: 0;
+            }
+            */
+
+            p {
+              font-size: 14px;  
+              color: #444;
+              margin-top: 8px;
+            }
+
+            a{
+                display: inline-block; /* inline-block - display inline que permite margin, height*/
+                margin-top: 16px;
+                text-decoration: none; /*retirar o underline*/
+                color: #B257e6;
+
+            }
+        }
+    }
+
+}
