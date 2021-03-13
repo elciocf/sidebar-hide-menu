@@ -8,3 +8,11 @@ body {
    font: 16px "Helvetica Neue",Arial, sans-serif; 
    color: #121214;      
 }
+
+.home,.products {
+    display:flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
